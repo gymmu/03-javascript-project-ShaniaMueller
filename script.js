@@ -12,8 +12,8 @@ result.push("")
 else {
 result.push(currentElement)
 }
-  return result.join("")
 }
+return result.join("")
 }
 
 export function aufgabe02(args) {
