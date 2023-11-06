@@ -71,12 +71,12 @@ count = count + 1
 
 
 //aufgabe 5:
-export function aufgabe04(args) {
+export function aufgabe05(args) {
 const input = args
   const result = []
 let capitalLetters = 0
 
-{
+
 for (let i = 0; i < input.length; i++) {
 const currentElement = input[i]
 
@@ -91,5 +91,8 @@ else if (currentElement === currentElement.toUpperCase())
 
 if (capitalLetters > 0) {
   return true
-} else { returnfalse}
-}}
+} else {
+   return false
+}
+
+}
