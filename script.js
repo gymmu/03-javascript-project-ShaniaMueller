@@ -55,9 +55,41 @@ else if (currentElement === 'E'){
   return count
 }
  
- 
- 
+
+//aufgabe 4: neuer Button -> 
+export function aufgabe04(args) {
+  const input = args 
+  const result = []
+}
+//soll die Sonderzeichen umgehen können
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+if (currentElement === ' '){
+count = count + 1
+}}
 
 
 
+//aufgabe 5:
+export function aufgabe04(args) {
+const input = args
+  const result = []
+let capitalLetters = 0
 
+{
+for (let i = 0; i < input.length; i++) {
+const currentElement = input[i]
+
+//prüft ob es einen Grossbuchstaben gibt
+if (currentElement=== ".") {}
+else if (currentElement===" "){}
+
+//wenn ein Element gleich ist, dann rechnet es plus 1.
+else if (currentElement === currentElement.toUpperCase()) 
+{capitalLetters++}
+}
+
+if (capitalLetters > 0) {
+  return true
+} else { returnfalse}
+}}
