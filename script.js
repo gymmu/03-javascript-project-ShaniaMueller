@@ -126,11 +126,8 @@ return result.join("")
     const currentElement = input[i]
     if (currentElement === 'e') {
       return i
-    } else if (currentElement === 'E') {
-      return i
     }
   }
   return -1
-
    
   }
