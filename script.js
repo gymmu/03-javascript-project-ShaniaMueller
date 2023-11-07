@@ -96,3 +96,21 @@ if (capitalLetters > 0) {
 }
 
 }
+
+//aufgabe 8: alle 'e'durch 3 ersetzen
+export function aufgabe08(args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+if (currentElement === 'e') {
+result.push("3") // nur das kleine 'e' muss durch 3 ersetzt werden
+} 
+else {
+result.push(currentElement)
+}
+}
+return result.join("")
+}
+

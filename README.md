@@ -26,7 +26,7 @@ Grossbuchstabe vorkommt.
 ## Aufgabe 06
 
 Schreibe eine Funktion, die testet, ob in einem Text mindestens ein
-Sonderzeichen vorkommt.
+Sonderzeichen vorkommt. 
 
 ## Aufgabe 07
 
