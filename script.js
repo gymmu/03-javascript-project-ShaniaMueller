@@ -64,7 +64,7 @@ export function aufgabe04(args) {
 //soll die Sonderzeichen umgehen können
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-if (currentElement === ' '){
+if (currentElement === ("")){
 count = count + 1
 }}
 
@@ -114,3 +114,23 @@ result.push(currentElement)
 return result.join("")
 }
 
+
+//aufgabe 12:
+
+
+  export function aufgabe12(args) {
+    const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === 'e') {
+      return i
+    } else if (currentElement === 'E') {
+      return i
+    }
+  }
+  return -1
+
+   
+  }
