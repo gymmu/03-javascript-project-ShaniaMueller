@@ -131,3 +131,21 @@ return result.join("")
   return -1
    
   }
+
+  //aufgabe 9:
+export function aufgabe09(args) {
+const input= args
+let len = 0
+for (let i = 0; i < input.length; i++) {
+len++
+}
+
+if (len === 6 ) {
+return true
+
+} else {
+ return false
+
+}
+}
+
