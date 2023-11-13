@@ -154,7 +154,8 @@ return true
 export function aufgabe11 (args) {
   const input = args
   let ascii = null
-if (input.length > 1) {
+if (input.length > 1) //funktionswächter 
+{
   return null
 }
 
@@ -166,3 +167,18 @@ return ascii}
 
   return null
 }
+
+//aufgabe 13:
+export function aufgabe13 (args) {
+  const input = args
+  const result = []
+  
+  for (let i = 1; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === 'e') {
+      return i
+    }
+  }
+  return -1
+   
+  }
