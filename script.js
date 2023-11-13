@@ -149,3 +149,20 @@ return true
 }
 }
 
+//aufgabe 11: 
+
+export function aufgabe11 (args) {
+  const input = args
+  let ascii = null
+if (input.length > 1) {
+  return null
+}
+
+
+  for (let i = 0; i < input.length; i++) {
+const currentElement = input [i]
+ascii = currentElement.charCodeAt(0)
+return ascii}
+
+  return null
+}
