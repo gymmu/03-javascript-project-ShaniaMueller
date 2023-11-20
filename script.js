@@ -198,6 +198,21 @@ export function aufgabe13 (args) {
     }
   }
   return -1
-   
   }
 
+
+  //aufgabe 19: 
+
+  export function aufgabe19(args) {
+    const input = args 
+    const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+    result.push(currentElement)
+  }
+
+
+    return result.join("")
+  }
