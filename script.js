@@ -173,12 +173,31 @@ export function aufgabe13 (args) {
   const input = args
   const result = []
   
-  for (let i = 1; i < input.length; i++) {
+  for (let i = 1; i < input.length; i++) { //soll die letzte position erkennen
     const currentElement = input[i]
     if (currentElement === 'e') {
       return i
     }
   }
   return -1
+  }
+
+  //aufgabe 14:
+  export function aufgabe14(args) {
+    const input = args 
+  const result = []
+    let countE = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === 'e') {
+      countE++
+      if (countE === 3) {
+        return i
+      }
+    }
+  }
+  return -1
    
   }
+
