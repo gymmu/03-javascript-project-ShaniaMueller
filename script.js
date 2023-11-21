@@ -216,3 +216,24 @@ export function aufgabe13 (args) {
 
     return result.join("")
   }
+
+//aufgabe 10:
+  export function aufgabe10(args) {
+    const input = args
+   
+    if (input.length !== 7) return false
+    if (input[0] !== "#") return false
+ 
+    for (let i = 1; i < input.length; i++) {
+      const currentElement = input[i]
+      const ascii = currentElement.charCodeAt(0)
+
+
+      if (48 <= ascii && ascii <= 57) {
+       } else if (65 <= ascii && ascii <= 70) {
+       }   
+       else {
+            return false
+       }}
+    return true
+  }
