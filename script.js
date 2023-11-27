@@ -265,3 +265,30 @@ export function aufgabe13 (args) {
     }
     
     }
+
+    export function aufgabe07(args) {
+      const input = args 
+      const result = []
+     
+      let capitalLetters = 0
+       
+      for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+     
+      if (currentElement=== ".") {}
+      
+      else if (currentElement===" "){}
+       
+      else if (currentElement === currentElement.toUpperCase())
+      {capitalLetters++}
+      }
+       
+      if (capitalLetters > 0) {
+
+        return true
+      } 
+      
+      else {
+         return false
+      }
+    }
