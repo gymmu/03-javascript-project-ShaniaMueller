@@ -200,6 +200,24 @@ export function aufgabe13 (args) {
   return -1
   }
 
+  //aufgabe 15:
+
+  export function aufgabe15(args) {
+    const input = args
+    const result = []
+ 
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+
+  if (currentElement=== ' ' ) {
+  return result.join("")
+  }
+
+      result.push(currentElement)
+  }
+    return result.join("")
+  }
+
 
   //aufgabe 19: 
 
@@ -266,8 +284,11 @@ export function aufgabe13 (args) {
     
     }
 
+    //aufgabe 7 (mit noah): 
+    
     export function aufgabe07(args) {
       const input = args 
+
       const result = []
      
       let capitalLetters = 0
@@ -276,7 +297,7 @@ export function aufgabe13 (args) {
       const currentElement = input[i]
      
       if (currentElement=== ".") {}
-      
+
       else if (currentElement===" "){}
        
       else if (currentElement === currentElement.toUpperCase())
@@ -284,11 +305,12 @@ export function aufgabe13 (args) {
       }
        
       if (capitalLetters > 0) {
-
         return true
-      } 
-      
-      else {
+
+      } else
+       {
          return false
       }
     }
+
+    
