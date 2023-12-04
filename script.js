@@ -369,7 +369,6 @@ export function aufgabe27(args) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt (0)
     if(48 <= ascii && ascii <= 57) {
-      // mache nichts; ist eine Zahl
     } else {
       return false
     }
@@ -378,4 +377,23 @@ export function aufgabe27(args) {
   return true
 }
 
-     
+export function aufgabe26 (args) {
+   
+  const list = args.split("")  // es braucht eine liste
+  for (let i = 0; i < list.length - 1; i++) {
+    
+    const currentElement = list[i]
+    const nextElement = list[i+1]
+    if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+      // elemente tauschen
+
+      const tmp = list[i+1]
+      list[i+1] = list[i]
+      list[i] = tmp
+      i = 0 // snach dem vertauschen soll der vorgang erneut gestartet werden
+    }
+  }
+  const result = list.join("")
+  return (result)
+ 
+}
