@@ -211,6 +211,7 @@ export function aufgabe13 (args) {
 
   if (currentElement=== ' ' ) {
   return result.join("")
+ 
   }
 
       result.push(currentElement)
@@ -313,4 +314,26 @@ export function aufgabe13 (args) {
       }
     }
 
+    export function bubbleSort (args) {
+      const list = args.split("") // es braucht eine Liste
+       for (let i = 0; i < list.length -1; i++) 
+       
+       {
+         const currentElement = list[i]
+         const nextElement = list[i+1] //ascii soll die buchstaben in zahlen umwandeln und sie dann nach grösse anordnen
+         
+         if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) { // einige Elemente werden gewechselt
+           
+          const tmp = list[i+1]
+           list[i+1] = list[i]
+           list[i] = tmp
+           
+           i = -1 // vorgang soll wiederholt werden
+         }
+       
+        }
+       const result = list.join("")
+       return (result)
+     
+     }
     
