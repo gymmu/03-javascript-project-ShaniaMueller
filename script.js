@@ -349,7 +349,7 @@ export function aufgabe13 (args) {
         const currentElement = input[i]
       if (currentElement === '.' )  
       if (input [i+1] === ' ') {
-        
+
         return true
       }
        
@@ -360,6 +360,22 @@ export function aufgabe13 (args) {
     }
 
 
-
+export function aufgabe27(args) {
+  const input = args
+  if (input.length === 0) return false
+ 
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt (0)
+    if(48 <= ascii && ascii <= 57) {
+      // mache nichts; ist eine Zahl
+    } else {
+      return false
+    }
+ 
+  }
+  return true
+}
 
      
