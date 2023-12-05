@@ -265,28 +265,17 @@ export function aufgabe13 (args) {
   export function aufgabe06(args) {
     const input = args
       const result = []
-    let capitalLetters = 0
     
     
     for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     
     //prüft ob es einen Grossbuchstaben gibt
-    if (currentElement=== ".") {}
-    else if (currentElement===" "){}
+    if (currentElement=== ".") 
+return true }
+    return false }
     
-    //wenn ein Element gleich ist, dann rechnet es plus 1.
-    else if (currentElement === currentElement.toUpperCase()) 
-    {capitalLetters++}
-    }
     
-    if (capitalLetters > 0) {
-      return true
-    } else {
-       return false
-    }
-    
-    }
 
     //aufgabe 7 (mit noah): 
     
@@ -317,6 +306,7 @@ export function aufgabe13 (args) {
       }
     }
 
+    //bubblesort:
     export function bubbleSort (args) {
       const list = args.split("") // es braucht eine Liste
        for (let i = 0; i < list.length -1; i++) 
@@ -359,7 +349,7 @@ export function aufgabe13 (args) {
      
     }
 
-
+//aufgabe 27:
 export function aufgabe27(args) {
   const input = args
   if (input.length === 0) return false
@@ -377,6 +367,7 @@ export function aufgabe27(args) {
   return true
 }
 
+//aufgabe 26:
 export function aufgabe26 (args) {
    
   const list = args.split("")  // es braucht eine liste
@@ -390,7 +381,7 @@ export function aufgabe26 (args) {
       const tmp = list[i+1]
       list[i+1] = list[i]
       list[i] = tmp
-      i = 0 // snach dem vertauschen soll der vorgang erneut gestartet werden
+      i = 0 // nach dem vertauschen soll der vorgang erneut gestartet werden
     }
   }
   const result = list.join("")
