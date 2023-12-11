@@ -107,11 +107,11 @@ export function aufgabe08(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-if (currentElement === 'e') {
+if (currentElement === 'e') { //hier wird das e erkannt
 result.push("3") // nur das kleine 'e' muss durch 3 ersetzt werden
 } 
 else {
-result.push(currentElement)
+result.push(currentElement) //wenn es kein e ist, soll das Element bleiben
 }
 }
 return result.join("")
@@ -122,23 +122,23 @@ return result.join("")
 
 
   export function aufgabe12(args) {
-    const input = args
+    const input = args //soll erste Position von e finden
   const result = []
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === 'e') {
+    if (currentElement === 'e') { //erkennt das e 
       return i
     }
   }
-  return -1
+  return -1 //die erste Position wird im Output mit -1 gezeigt
    
   }
 
   //aufgabe 9:
 export function aufgabe09(args) {
 const input= args
-let len = 0
+let len = 0 //fängt an zu zählen bei 0
 for (let i = 0; i < input.length; i++) {
 len++
 }
@@ -146,7 +146,7 @@ len++
 if (len === 6 ) {
 return true
 
-} else {
+} else { //im Output wird false angezeigt, wenn 6 mehr/weniger Zeichen
  return false
 
 }
@@ -178,11 +178,11 @@ export function aufgabe13 (args) {
   
   for (let i = 1; i < input.length; i++) { //soll die letzte position erkennen
     const currentElement = input[i]
-    if (currentElement === 'e') {
+    if (currentElement === 'e') { 
       return i
     }
   }
-  return -1
+  return -1 //wenn kein e gefunden wird dann -1
   }
 
   //aufgabe 14:
@@ -193,9 +193,9 @@ export function aufgabe13 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === 'e') {
+    if (currentElement === 'e') { //bei jedem e wird es höher gecountet
       countE++
-      if (countE === 3) {
+      if (countE === 3) { //nach 3 e wird die dritte Position angegeben
         return i
       }
     }
@@ -212,12 +212,12 @@ export function aufgabe13 (args) {
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
 
-  if (currentElement=== ' ' ) {
+  if (currentElement=== ' ' ) { //erkennt Lehrzeichen (ähnlich wie Aufgabe 13)
   return result.join("")
  
   }
 
-      result.push(currentElement)
+      result.push(currentElement) //Widergabe des Output bis zum ersten Lehrzeichen
   }
     return result.join("")
   }
@@ -230,9 +230,9 @@ export function aufgabe13 (args) {
     const result = []
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i] 
     result.push(currentElement)
-    result.push(currentElement)
+    result.push(currentElement) //fügt das Element zwei Mal in den Output rein
   }
 
 
@@ -270,7 +270,7 @@ export function aufgabe13 (args) {
     for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     
-    //prüft ob es einen Grossbuchstaben gibt
+    //prüft nach Sonderzeichen
     if (currentElement=== ".") 
 return true }
     return false }
@@ -313,15 +313,15 @@ return true }
        
        {
          const currentElement = list[i]
-         const nextElement = list[i+1] //ascii soll die buchstaben in zahlen umwandeln und sie dann nach grösse anordnen
+         const nextElement = list[i+1] //ascii soll die buchstaben in zahlen umwandeln und sie dann der Grösse nach anordnen
          
-         if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) { // einige Elemente werden gewechselt
+         if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) { //einige Elemente werden gewechselt
            
           const tmp = list[i+1]
            list[i+1] = list[i]
            list[i] = tmp
            
-           i = -1 // vorgang soll wiederholt werden
+           i = -1 //vorgang soll wiederholt werden
          }
        
         }
@@ -330,15 +330,15 @@ return true }
      
      }
     
-
+//aufgabe 20:
      export function aufgabe20(args) {
       const input = args
       const result = []
      
       for (let i = 0; i < input.length; i++) {
         const currentElement = input[i]
-      if (currentElement === '.' )  
-      if (input [i+1] === ' ') {
+      if (currentElement === '.' )  //erkennt den Punkt
+      if (input [i+1] === ' ') { //prüft ob nach dem Punkt ein Lehrzeichen folgt
 
         return true
       }
@@ -358,13 +358,13 @@ export function aufgabe27(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt (0)
-    if(48 <= ascii && ascii <= 57) {
+    if(48 <= ascii && ascii <= 57) { //prüft obdie Elemente Zahlen sind --> zwischen 0-9
     } else {
-      return false
+      return false //falsch wenn es nichts findet
     }
  
   }
-  return true
+  return true //richtig wenn es etwas findet
 }
 
 //aufgabe 26:
