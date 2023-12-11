@@ -25,9 +25,9 @@ const result = []
 for (let i = 0; i < input.length; i++) {
 
   const currentElement = input [i]
-const capitalizedElement = currentElement.toUpperCase()
+const capitalizedElement = currentElement.toUpperCase() //Grossschreibung der Buchstaben
 
-result.push(capitalizedElement)
+result.push(capitalizedElement) //Grossbuchstaben werden wiedergegeben werden
 }
 return result.join("")
 
@@ -52,7 +52,7 @@ else if (currentElement === 'E'){
   count = count + 1
 }
   }
-  return count
+  return count //Anzahl der gezählten E im Output
 }
  
 
@@ -68,37 +68,37 @@ for (let i = 0; i < input.length; i++) {
 if (currentElement === ""){
 count = count + 1
 }}
-return count
+return count 
 }
 
 
 
 //aufgabe 5:
 export function aufgabe05(args) {
-const input = args
+  const input = args
   const result = []
-let capitalLetters = 0
-
-
-for (let i = 0; i < input.length; i++) {
-const currentElement = input[i]
-
-//prüft ob es einen Grossbuchstaben gibt
-if (currentElement=== ".") {}
-else if (currentElement===" "){}
-
-//wenn ein Element gleich ist, dann rechnet es plus 1.
-else if (currentElement === currentElement.toUpperCase()) 
-{capitalLetters++}
+  let capitalLetters = 0
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input [i]
+    if (currentElement === ".") { //erkennt Punkt
+    } else if (currentElement === " ") { //erkennt Leerzeichen
+ 
+    }
+    else if (currentElement !== currentElement.toLowerCase()) { //erkennt grosse und kleine Buchstaben
+      capitalLetters++
+    }
+  }
+ 
+  if (capitalLetters> 0) { //gibt nur die Grossbuchstaben in den Output
+    return true
+  }else {
+    return false
+  }
+ 
 }
+ 
 
-if (capitalLetters > 0) {
-  return true
-} else {
-   return false
-}
-
-}
 
 //aufgabe 8: alle 'e'durch 3 ersetzen
 export function aufgabe08(args) {
@@ -410,5 +410,5 @@ for (let i = 0; i < text.length; i++) {
 const name = listFirst.join("")
 const age = listSecond.join("")
 
-return "Sie heissen " + name + " und sind " + age + " Jahre alt"
+return "Sie heissen " + name + " und sind " + age + " Jahre alt" //der Text und die Eingabe sollen angezeigt werden
 }
