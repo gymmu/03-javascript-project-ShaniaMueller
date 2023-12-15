@@ -329,6 +329,8 @@ return true }
        return (result)
      
      }
+
+     //Bubblesort ist ein Sortieralgorithmus. Er geht eine Liste wiederholt durch, vergleicht die Elemente nebenan und tauscht sie, wenn sie in der falschen Reihenfolge sind. Das wiederholt sich, bis keine Änderungen mehr vorgenommen werden müssen.
     
 //aufgabe 20:
      export function aufgabe20(args) {
