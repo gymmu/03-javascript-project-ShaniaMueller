@@ -26,7 +26,7 @@ Grossbuchstabe vorkommt.
 ## Aufgabe 06
 
 Schreibe eine Funktion, die testet, ob in einem Text mindestens ein
-Sonderzeichen vorkommt.
+Sonderzeichen vorkommt. 
 
 ## Aufgabe 07
 
@@ -34,7 +34,7 @@ Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
 
 ## Aufgabe 08
 
-Ersetze alle `e`s mit einer `3`.
+Ersetze alle `e`s mit einer `3`. 
 
 ## Aufgabe 09
 
@@ -48,7 +48,7 @@ Teste ob eine Eingabe ein korrekter RGB Hexcode ist.
 
 Gib den ASCII code eines einzelnen Buchstabens an.
 
-## Aufgabe 12
+## Aufgabe 12 
 
 Suche die Position des ersten `e`s in einem Text.
 
